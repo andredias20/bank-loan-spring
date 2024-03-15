@@ -40,7 +40,7 @@ public class LoanService {
 
         search.setDate(dto.getDate());
         search.setCurrency(dto.getCurrency());
-        search.setValue(dto.getValue());
+        search.setTotal_value(dto.getTotal_value());
         search.setConversion_tax(dto.getConversion_tax());
         search.setLoan_expire_date(dto.getLoan_expire_date());
 

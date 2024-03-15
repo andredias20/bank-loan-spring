@@ -24,14 +24,14 @@ public class Loan {
     private Date date;
     @Column(length = 3)
     private String currency;
-    private Double value;
+    private Double total_value;
     private Double conversion_tax;
     private Date loan_expire_date;
 
-    public Loan(Date date, String currency, Double value, Double conversion_tax, Date loan_expire_date) {
+    public Loan(Date date, String currency, Double total_value, Double conversion_tax, Date loan_expire_date) {
         this.date = date;
         this.currency = currency;
-        this.value = value;
+        this.total_value = total_value;
         this.conversion_tax = conversion_tax;
         this.loan_expire_date = loan_expire_date;
     }

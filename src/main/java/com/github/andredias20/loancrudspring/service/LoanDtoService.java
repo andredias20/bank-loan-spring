@@ -1,8 +1,6 @@
 package com.github.andredias20.loancrudspring.service;
 
-import com.github.andredias20.loancrudspring.dto.client.ClientGetDTO;
 import com.github.andredias20.loancrudspring.dto.loan.LoanGetDTO;
-import com.github.andredias20.loancrudspring.entity.Client;
 import com.github.andredias20.loancrudspring.entity.Loan;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +12,7 @@ public class LoanDtoService {
                 loan.getId(),
                 loan.getDate(),
                 loan.getCurrency(),
-                loan.getValue(),
+                loan.getTotal_value(),
                 loan.getConversion_tax(),
                 loan.getLoan_expire_date()
         );
